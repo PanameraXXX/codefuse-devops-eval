@@ -26,6 +26,8 @@ DevOps-Eval is a comprehensive evaluation suite specifically designed for founda
 ## 📜 Table of Contents
 
 - [🏆 Leaderboard](#-leaderboard)
+  - [👀 DevOps](#-devops)
+  - [🔥 AIOps](#-aiops)
 - [⏬ Data](#-data)
   - [👀 Notes](#-notes)
   - [🔥 AIOps Sample Example](#-aiops-sample-example)
@@ -36,7 +38,7 @@ DevOps-Eval is a comprehensive evaluation suite specifically designed for founda
 
 ## 🏆 Leaderboard
 Below are zero-shot and five-shot accuracies from the models that we evaluate in the initial release. We note that five-shot performance is better than zero-shot for many instruction-tuned models.
-
+### DevOps
 #### Zero Shot
 
 |      **ModelName**       | plan  | code  | build |  test  | release  | deploy | operate | monitor  | **AVG** |
@@ -75,6 +77,44 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 | Internlm-7B-Chat |  60.61 | 63.06 | 79.82 | 80.26 | 67.92 | 75.69 | 73.88 | 77.31 | 71.09 |
 | Baichuan2-7B-Chat |  60.61 | 64.95 | 81.19 | 75.88 | 71.23 | 75.69 | 78.36 | 79.17 | 70.49 |
 | Internlm-7B-Base |  62.12 | 65.25 | 77.52 | 80.7 | 74.06 | 78.82 | 79.85 | 75.46 | 69.17 |
+
+### AIOps
+#### Zero Shot
+|    **ModelName**    |  LogParsing  | RootCauseAnalysis  | TimeSeriesAnomalyDetection  | TimeSeriesClassification  | **AVG** |
+|:-------------------:|:------------:|:------------------:|:---------------------------:|:-------------------------:|:-------:|
+|    Qwen-14B-Base    |    66.29     |        58.8        |            25.33            |           43.5            |  49.27  |
+| DevOpsPal-14B—Base  |    63.14     |        53.6        |            23.33            |           43.5            |  46.55  |
+| DevOpsPal-14B—Chat  |      60      |         56         |             24              |            43             |  46.18  |
+|    Qwen-14B-Chat    |    64.57     |        51.6        |            22.67            |            36             |   45    |
+|    Qwen-7B-Base     |      50      |        39.2        |            22.67            |            54             |  40.82  |
+|    Qwen-7B-Chat     |    57.43     |        38.8        |            22.33            |           39.5            |  40.36  |
+|  DevOpsPal-7B—Chat  |    56.57     |        30.4        |            25.33            |            45             |   40    |
+| Baichuan2-13B-Chat  |      64      |         18         |            21.33            |           37.5            |  37.09  |
+|  Baichuan2-7B-Chat  |    60.86     |         10         |             28              |           34.5            |  35.55  |
+|  Baichuan2-7B-Base  |    53.43     |        12.8        |            27.67            |           36.5            |  34.09  |
+|  Internlm-7B—Base   |    48.57     |        18.8        |            23.33            |           37.5            |  32.91  |
+| Baichuan2-13B-Base  |      54      |        12.4        |             23              |           34.5            |  32.55  |
+|  DevOpsPal-7B—Base  |    46.57     |        20.8        |             25              |            34             |  32.55  |
+|  Internlm-7B—Chat   |    58.86     |        8.8         |            22.33            |           28.5            |   32    |
+
+#### One Shot
+|    **ModelName**    |  LogParsing  | RootCauseAnalysis  | TimeSeriesAnomalyDetection  | TimeSeriesClassification  | **AVG** |
+|:-------------------:|:------------:|:------------------:|:---------------------------:|:-------------------------:|:-------:|
+| DevOpsPal-14B—Chat | 66.29 | 80.8 | 23.33 | 44.5 | 53.91 |
+| Qwen-14B-Base | 64.29 | 74.4 | 28 | 48.5 | 53.82 |
+| DevOpsPal-14B—Base | 60 | 74 | 25.33 | 43.5 | 50.73 |
+| Qwen-14B-Chat | 49.71 | 65.6 | 28.67 | 48 | 47.27 |
+| Qwen-7B-Base | 56 | 60.8 | 27.67 | 44 | 47.18 |
+| DevOpsPal-7B—Base | 52.86 | 44.4 | 28 | 44.5 | 42.64 |
+| Qwen-7B-Chat | 54.57 | 52 | 29.67 | 26.5 | 42.09 |
+| Baichuan2-13B-Base | 56 | 43.2 | 24.33 | 41 | 41.73 |
+| Baichuan2-13B-Chat | 57.43 | 44.4 | 25 | 25.5 | 39.82 |
+| Baichuan2-7B-Base | 48.29 | 40.4 | 27 | 42 | 39.55 |
+| Baichuan2-7B-Chat | 58.57 | 31.6 | 27 | 31.5 | 38.91 |
+| DevOpsPal-7B—Chat | 56.57 | 27.2 | 25.33 | 41.5 | 38.64 |
+| Internlm-7B—Base | 48 | 33.2 | 29 | 35 | 37.09 |
+| Internlm-7B—Chat | 62.57 | 12.8 | 22.33 | 21 | 32.73 |
+
 
 ## ⏬ Data
 #### Download
